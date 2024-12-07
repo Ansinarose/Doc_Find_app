@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api
 
-import 'package:doc_find_app/Screens/page2.dart';
+
+import 'package:doc_find_app/Screens/SkipScreen.dart';
 import 'package:doc_find_app/constants/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
       if (status == AnimationStatus.completed) {
         // TODO: Replace with your actual next screen
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => Page2()),
+          MaterialPageRoute(builder: (_) => Skipscreen()),
         );
       }
     });

@@ -6,7 +6,7 @@ class AppConstants {
   static const Color secondaryColor = Color(0xFFffffff  ); // Light grey
   
   // Scaffold Color
-  static const Color scaffoldColor = Color(0xFFf1f1f1); // White color
+  static const Color scaffoldColor = Color.fromARGB(255, 233, 232, 232); // White color
 
   // Font Sizes
   static const double headingFontSize = 24.0;

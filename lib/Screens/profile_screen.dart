@@ -164,6 +164,8 @@
 //     );
 //   }
 
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 //   // Custom ListTile Builder
 //   Widget _buildListTile({
 //     required IconData leading,
@@ -224,7 +226,7 @@ class ProfileScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(20.0),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.blue.withOpacity(0.3),
+                  color: Colors.blue,
                   spreadRadius: 2,
                   blurRadius: 10,
                   offset: Offset(0, 4),
@@ -293,7 +295,7 @@ class ProfileScreen extends StatelessWidget {
                         child: IconButton(
                           icon: Icon(
                             Icons.edit,
-                            color: Colors.blue, // Changed icon color to blue to stand out on white background
+                            color: Colors.black, // Changed icon color to blue to stand out on white background
                             size: 20.0,
                           ),
                           onPressed: () {},

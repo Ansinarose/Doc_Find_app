@@ -1,4 +1,6 @@
 
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 class CustomFullScreenDialog extends StatelessWidget {
@@ -76,7 +78,7 @@ class CustomFullScreenDialog extends StatelessWidget {
                     Text(
                       'Job Description',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -84,8 +86,8 @@ class CustomFullScreenDialog extends StatelessWidget {
                     Text(
                       'We are seeking experienced Doctors with a minimum of 5 years of clinical experience to join our team.',
                       style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.grey,
+                        fontSize: 14,
+                        color: Colors.black,
                       ),
                     ),
                   ],
@@ -94,14 +96,14 @@ class CustomFullScreenDialog extends StatelessWidget {
 
               // Position Description Section
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(left: 16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Position Description',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -109,8 +111,8 @@ class CustomFullScreenDialog extends StatelessWidget {
                     Text(
                       'As a Doctor at HealthOk, you will play a vital role in providing exceptional medical care to our patients. Your responsibilities will include:',
                       style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.grey,
+                        fontSize: 14,
+                        color: Colors.black,
                       ),
                     ),
                   ],
@@ -119,14 +121,14 @@ class CustomFullScreenDialog extends StatelessWidget {
 
               // Required Skills Section
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(left: 16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Required skills:',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -147,18 +149,18 @@ class CustomFullScreenDialog extends StatelessWidget {
 
               // Additional Job Details
              Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(left: 16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     _buildJobDetailRow('Role:', 'Doctor - Other'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 4),
                     _buildJobDetailRow('Industry Type:', 'Medical services / Hospital'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 4),
                     _buildJobDetailRow('Department:', 'Healthcare & Life Sciences'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 4),
                     _buildJobDetailRow('Employment Type:', 'Full Time, Permanent'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 4),
                     _buildJobDetailRow('Role Category:', 'Doctor'),
                   ],
                 ),
@@ -260,7 +262,7 @@ Widget _buildInfoContainer({
           value,
           style: TextStyle(
             fontSize: 12,
-            color: Colors.grey,
+            color: Colors.black,
           ),
         ),
       ],
@@ -277,7 +279,7 @@ Widget _buildInfoContainer({
         Expanded(
           child: Text(
             text,
-            style: TextStyle(fontSize: 16, color: Colors.grey),
+            style: TextStyle(fontSize: 14, color: Colors.black),
           ),
         ),
       ],
