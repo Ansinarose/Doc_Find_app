@@ -133,6 +133,7 @@
 //     );
 //   }
 // }
+import 'package:doc_find_app/Screens/Home_screen.dart';
 import 'package:flutter/material.dart';
 
 class Page2 extends StatelessWidget {
@@ -243,7 +244,9 @@ class Page2 extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=> HomeScreen()));
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF2196F3),
                         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
