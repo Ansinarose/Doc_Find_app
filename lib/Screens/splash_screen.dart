@@ -1,4 +1,7 @@
+// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api
+
 import 'package:doc_find_app/Screens/page2.dart';
+import 'package:doc_find_app/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -61,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: AppConstants.primaryColor,
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -71,13 +74,13 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
               position: _docAnimation,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: AppConstants.secondaryColor,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
                   'DOC',
                   style: TextStyle(
-                    color: Colors.blue,
+                    color: AppConstants.primaryColor,
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
                   ),
@@ -91,7 +94,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
               child: Text(
                 'FIND',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: AppConstants.secondaryColor,
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
                 ),
